@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PIF Übersicht</title>
+
   <style>
-    body { font-family:Arial, sans-serif; padding:20px; }
-    a { display:block; margin:10px 0; color:#000; text-decoration:none; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 400;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.25s ease;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
   </style>
 </head>
+
 <body>
-  <h1>Produkt-PIFs</h1>
-  <a href="/creme.html">Creme – PIF</a>
-  <a href="/lipsalbe.html">Lipsalbe – PIF</a>
-  <!-- weitere Links -->
+  <h1>Produkt-Informationsblätter (PIF)</h1>
+
+  <div class="grid">
+    <a class="card" href="creme.html">Creme</a>
+    <a class="card" href="lipsalbe.html">Lipsalbe</a>
+    <a class="card" href="deo.html">Deo</a>
+    <a class="card" href="gesichtsoel.html">Gesichtsöl</a>
+    <a class="card" href="handcreme.html">Handcreme</a>
+  </div>
 </body>
 </html>
