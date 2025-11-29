@@ -6,25 +6,23 @@
 <title>PIF – Produkte</title>
 
 <style>
-    /* Frostiger Hintergrund */
     body {
         margin: 0;
         font-family: "Inter", sans-serif;
-        background: linear-gradient(135deg, #e8f4ff, #f6fbff);
-        color: #0f1b2b;
+        background: linear-gradient(135deg, #e9f4ff, #f7fbff);
+        color: #0e243c;
     }
 
     header {
         text-align: center;
         padding: 70px 20px 40px;
-        color: #0f1b2b;
     }
 
     header h1 {
         margin: 0;
         font-size: 3rem;
         font-weight: 800;
-        background: linear-gradient(90deg, #4aa3ff, #7bcaff);
+        background: linear-gradient(90deg, #52a8ff, #89d3ff);
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -32,11 +30,10 @@
     header p {
         margin: 0;
         margin-top: 12px;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         opacity: 0.75;
     }
 
-    /* Grid */
     .grid {
         display: grid;
         gap: 35px;
@@ -46,15 +43,14 @@
         margin: auto;
     }
 
-    /* Frosted/Glas-Effekt */
     .tile {
-        backdrop-filter: blur(14px);
-        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.45);
         border: 1px solid rgba(255, 255, 255, 0.35);
-        border-radius: 24px;
-        padding: 35px 25px;
+        border-radius: 26px;
+        padding: 40px 30px;
         text-align: center;
-        box-shadow: 0px 8px 30px rgba(120, 170, 255, 0.15);
+        box-shadow: 0px 8px 40px rgba(90, 150, 255, 0.18);
         transition: 0.28s;
         cursor: pointer;
         text-decoration: none;
@@ -62,23 +58,21 @@
     }
 
     .tile:hover {
-        transform: translateY(-8px) scale(1.02);
-        box-shadow: 0px 12px 45px rgba(120, 170, 255, 0.25);
-        background: rgba(255, 255, 255, 0.65);
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0px 16px 55px rgba(90, 150, 255, 0.28);
+        background: rgba(255, 255, 255, 0.62);
     }
 
-    /* Icon Style */
     .icon {
-        width: 76px;
-        height: 76px;
-        margin-bottom: 20px;
-        opacity: 0.9;
+        width: 90px;
+        height: 90px;
+        margin-bottom: 18px;
+        filter: drop-shadow(0px 0px 6px rgba(120,180,255,0.55));
     }
 
     .tile h2 {
         font-size: 1.45rem;
-        margin: 0;
-        margin-top: 8px;
+        margin-top: 12px;
         font-weight: 600;
     }
 
@@ -86,7 +80,7 @@
         text-align: center;
         padding: 35px;
         font-size: 0.9rem;
-        color: #44546f;
+        color: #4c617b;
     }
 </style>
 </head>
@@ -94,7 +88,7 @@
 
 <header>
     <h1>Produkt-Informationsblätter</h1>
-    <p>Offizielle Kosmetik-PIFs – frostiges, klares Design ❄️</p>
+    <p>Offizielle Kosmetik-PIFs – moderner Frost-Look ❄️</p>
 </header>
 
 <div class="grid">
@@ -102,8 +96,8 @@
     <!-- Handcreme Bar -->
     <a href="PDFS/handcreme-bar.pdf" class="tile">
         <svg class="icon" viewBox="0 0 64 64">
-            <rect x="10" y="20" width="44" height="30" rx="8" ry="8" stroke="#4aa3ff" fill="none" stroke-width="4"/>
-            <rect x="16" y="25" width="32" height="20" rx="5" stroke="#7bcaff" fill="none" stroke-width="3"/>
+            <rect x="10" y="22" width="44" height="28" rx="10" stroke="#61b6ff" fill="none" stroke-width="4"/>
+            <rect x="16" y="26" width="32" height="20" rx="6" stroke="#8cd5ff" fill="none" stroke-width="3"/>
         </svg>
         <h2>Handcreme – Bar</h2>
     </a>
@@ -111,26 +105,35 @@
     <!-- Handcreme Fest -->
     <a href="PDFS/handcreme-fest.pdf" class="tile">
         <svg class="icon" viewBox="0 0 64 64">
-            <path d="M20 45 Q32 60 44 45 L44 20 L20 20 Z" stroke="#4aa3ff" fill="none" stroke-width="4"/>
-            <circle cx="32" cy="28" r="6" stroke="#7bcaff" fill="none" stroke-width="3"/>
+            <path d="M22 16 H42 V48 C42 54 22 54 22 48 Z" stroke="#61b6ff" fill="none" stroke-width="4" rx="8"/>
+            <circle cx="32" cy="30" r="6" stroke="#8cd5ff" fill="none" stroke-width="3"/>
         </svg>
         <h2>Handcreme – Fest</h2>
     </a>
 
-    <!-- Lippenbalsam (Cremedose) -->
+    <!-- Lippenbalsam (Dose) -->
     <a href="PDFS/lippenbalsam.pdf" class="tile">
         <svg class="icon" viewBox="0 0 64 64">
-            <ellipse cx="32" cy="24" rx="22" ry="10" stroke="#4aa3ff" fill="none" stroke-width="4"/>
-            <path d="M10 24 V36 C10 44 22 50 32 50 C42 50 54 44 54 36 V24" stroke="#7bcaff" fill="none" stroke-width="3"/>
+            <ellipse cx="32" cy="24" rx="22" ry="10" stroke="#61b6ff" fill="none" stroke-width="4"/>
+            <path d="M10 24 V38 C10 46 22 52 32 52 C42 52 54 46 54 38 V24" stroke="#8cd5ff" fill="none" stroke-width="3"/>
         </svg>
-        <h2>Lippenbalsam / Pflege</h2>
+        <h2>Lippenbalsam</h2>
     </a>
 
-    <!-- Lippenpflege (Stick) -->
+    <!-- Lippenpflege Stick -->
+    <a href="PDFS/lippenpflege.pdf" class="tile">
+        <svg class="icon" viewBox="0 0 64 64">
+            <rect x="28" y="10" width="12" height="26" rx="5" stroke="#61b6ff" fill="none" stroke-width="4"/>
+            <rect x="24" y="36" width="20" height="18" rx="6" stroke="#8cd5ff" fill="none" stroke-width="3"/>
+        </svg>
+        <h2>Lippenpflege</h2>
+    </a>
+
+    <!-- Lipstick (echter Lippenstift) -->
     <a href="PDFS/lipstick.pdf" class="tile">
         <svg class="icon" viewBox="0 0 64 64">
-            <rect x="26" y="10" width="12" height="24" rx="4" stroke="#4aa3ff" fill="none" stroke-width="4"/>
-            <rect x="22" y="34" width="20" height="20" rx="5" stroke="#7bcaff" fill="none" stroke-width="3"/>
+            <path d="M30 10 L38 22 L38 40 L26 40 L26 22 Z" stroke="#61b6ff" fill="none" stroke-width="4"/>
+            <rect x="22" y="40" width="20" height="16" rx="6" stroke="#8cd5ff" fill="none" stroke-width="3"/>
         </svg>
         <h2>Lipstick</h2>
     </a>
@@ -138,10 +141,9 @@
 </div>
 
 <footer>
-    © 2025 BIENEN AG - Alle Rechte vorbehalten
+    © 2025 BIENEN AG – Alle Rechte vorbehalten
 </footer>
 
 </body>
 </html>
-
 
