@@ -1,2 +1,2 @@
 # pif-viewer
-Der PIF-Viewer der Bienen AG (Gesamtschule)
+Der PIF-Viewer der Bienen AG (Gesamtschule Erle)
